@@ -1,9 +1,10 @@
 import type React from "react";
 import "./InputField.css";
+import { useState } from "react";
 
 interface inputProps {
   inputName: string | undefined;
-  inputOnchange?: React.ChangeEventHandler<HTMLInputElement>;
+  inputOnchange: React.ChangeEventHandler<HTMLInputElement>;
   inputPlaceholder: string | undefined;
   inputType: string;
 }
