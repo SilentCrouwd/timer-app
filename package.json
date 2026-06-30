@@ -1,7 +1,7 @@
 {
   "name": "timer-app",
   "private": true,
-  "homepage": "https:SilentCrouwd.github.io/timer-app",
+  "homepage": "https://SilentCrouwd.github.io/timer-app",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
