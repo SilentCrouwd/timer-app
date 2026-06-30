@@ -1,7 +1,11 @@
 import "./Display.css";
+interface DisplayProps {
+  displayName: string;
+  displayValue: string | number;
+}
 
-function Display() {
-  return <p className="">Hier entsteht eine Display</p>;
+function Display({ displayName, displayValue }: DisplayProps) {
+  return <p className={displayName}>{displayValue}</p>;
 }
 
 export default Display;
