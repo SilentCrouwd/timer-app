@@ -1,0 +1,22 @@
+.timer__container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.timer__button-container {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+}
+.timer__time-left {
+  font-size: 2rem;
+}
+.timer__time-display {
+  font-size: 1.5rem;
+}
+.timer__headline {
+  font-size: 3rem;
+}
