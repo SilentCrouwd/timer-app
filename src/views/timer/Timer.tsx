@@ -24,12 +24,10 @@ function useGetInput() {
 function useTimerHook() {
   const [handleTime, setHandleTime] = useState<number>(0);
   const [isActive, setIsActive] = useState<boolean>(false);
-  const [startValue, setStartValue] = useState<number>(0);
   const intervalId = useRef<number>(-1);
   function clearTimer() {
     pauseTimer();
     setHandleTime(0);
-    setStartValue(0);
   }
 
   function pauseTimer() {
@@ -41,7 +39,6 @@ function useTimerHook() {
     if (startTime) {
       setHandleTime(startTime);
       setIsActive(true);
-      setStartValue(startTime);
     }
     if (!startTime && handleTime > 0) {
       setIsActive(true);
