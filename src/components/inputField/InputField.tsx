@@ -1,8 +1,8 @@
 import type React from "react";
 import "./InputField.css";
-import { useState } from "react";
 
 interface inputProps {
+  inputValue: number | string | undefined;
   inputName: string | undefined;
   inputOnchange: React.ChangeEventHandler<HTMLInputElement>;
   inputPlaceholder: string | undefined;
@@ -10,6 +10,7 @@ interface inputProps {
 }
 
 function InputField({
+  inputValue,
   inputName,
   inputOnchange,
   inputPlaceholder,
@@ -17,6 +18,7 @@ function InputField({
 }: inputProps) {
   return (
     <input
+      value={inputValue}
       className={inputName}
       onChange={inputOnchange}
       placeholder={inputPlaceholder}
